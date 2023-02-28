@@ -7,7 +7,7 @@ class Main {
 		System.out.println("What is the address of the stable?");
 		Scanner scanner = new Scanner(System.in);
 		s.address = scanner.nextLine();
-		do {
+		while(true) {
 			System.out.println("Do you wish to add a horse to the stable?"); 
 			char input = scanner.next().charAt(0);
 			scanner.nextLine();
@@ -25,9 +25,7 @@ class Main {
 			else{
 				break;
 			}
-		}while(true);
-		//Display the info here
-                //You code here!
-	  }
+		}
+    s.listHorses();
   }
 }
